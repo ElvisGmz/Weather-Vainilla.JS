@@ -1,5 +1,3 @@
-// Tutorial by http://youtube.com/CodeExplained
-// api key : 82005d27a116c2880c8f0fcb866998a0
 
 // SELECT ELEMENTS
 const iconElement = document.querySelector(".weather-icon");
@@ -45,7 +43,7 @@ function showError(error){
 
 // Obtiene los datos del clima de la API
 function getWeather(latitude, longitude){
-    let api = `http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${key}`;
+    let api = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${key}`;
     
     fetch(api)
         .then(function(response){
