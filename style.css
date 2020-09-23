@@ -2,16 +2,32 @@
 
 *{
     font-family: 'Baloo Tammudu 2', cursive;
+    position: relative;
+}
+
+video{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
 }
 
 body{
     background-color: dodgerblue;
+    background-image: url(./icons/unk.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     min-height: 425px;
     height: 100vh;
     margin: 0;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 .container{
