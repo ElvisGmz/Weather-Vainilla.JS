@@ -1,5 +1,4 @@
-
-// SELECT ELEMENTS
+// Selecciona Elementos
 const iconElement = document.querySelector(".weather-icon");
 const tempElement = document.querySelector(".temperature-value p");
 const descElement = document.querySelector(".temperature-description p");
@@ -64,7 +63,7 @@ function getWeather(latitude, longitude){
 
 // Muestra el clima
 function displayWeather(){
-    iconElement.innerHTML = `<img src="icons/${weather.iconId}.png"/>`;
+    iconElement.innerHTML = `<img src="icons/${weather.iconId}.svg"/>`;
     tempElement.innerHTML = `${weather.temperature.value}°<span>C</span>`;
     descElement.innerHTML = weather.description;
     locationElement.innerHTML = `${weather.city}, ${weather.country}`;
